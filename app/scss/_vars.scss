@@ -26,9 +26,15 @@ $bg: #f6f6f6;
     background-color: $accent;
     @extend %roboto-400;
     box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+    transition: all .3s;
+    cursor: pointer;
+    &:hover{
+        font-size: 17px;
+    }
 }
 
-%checkbox-hidden{
+%checkbox-hidden,
+%radio-hidden{
     width: 1px;
     height: 1px;
     overflow: hidden;
